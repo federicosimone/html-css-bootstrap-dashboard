@@ -21,22 +21,22 @@
                 </button>
                 <div class="collapse navbar-collapse fs-6" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item fs-6">
+                        <li class="nav-item d-none d-lg-inline-block">
                             <a class="nav-link active" aria-current="page" href="#">Catalogo libri</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item d-none d-lg-inline-block">
                             <a class="nav-link" href="#">Anagrafica utenti</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item d-none d-lg-inline-block">
                             <a class="nav-link" href="#">Storico prestiti</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item d-none d-lg-inline-block">
                             <a class="nav-link" aria-disabled="true">Help</a>
                         </li>
                     </ul>
                     <form class="d-flex" role="search">
                         <input class="form-control me-2" type="search" placeholder="Cerca..." aria-label="Search" />
-                        <button class="btn btn-outline-success" type="submit">Cerca</button>
+                        <button class="btn                                                 btn-outline-light" type="submit">Cerca</button>
                     </form>
                 </div>
             </div>
@@ -60,7 +60,7 @@
                         <thead>
                             <tr>
                                 <th scope="col">Titolo</th>
-                                <th scope="col" class="d-none d-md-block">Data prestito</th>
+                                <th scope="col" class="d-none d-md-table-cell">Data prestito</th>
                                 <th scope="col">Stato</th>
                                 <th scope="col">Azioni</th>
                             </tr>
@@ -68,9 +68,9 @@
                         <tbody>
                             <tr>
                                 <td>I pilastri della terra</td>
-                                <td class="d-none d-md-inline">Mark</td>
-                                <td>Otto</td>
-                                <td>
+                                <td class="d-none d-md-table-cell">Mark</td>
+                                <td><span class="badge text-bg-success">Disponibile</span></td>
+                                <td class="d-flex gap-1">
                                     <button type="button" class="btn btn-outline-secondary fs-6">
                                         <i class="fa-solid fa-trash"></i>
                                     </button>
@@ -80,10 +80,10 @@
                                 </td>
                             </tr>
                             <tr>
-                                <td>2</td>
-                                <td class="d-none d-md-block">Jacob</td>
-                                <td>Thornton</td>
-                                <td>
+                                <td>I promessi sposi</td>
+                                <td class="d-none d-md-table-cell">Jacob</td>
+                                <td><span class="badge text-bg-success">Disponibile</span></td>
+                                <td class="d-flex gap-1">
                                     <button type="button" class="btn btn-outline-secondary fs-6">
                                         <i class="fa-solid fa-trash"></i>
                                     </button>
@@ -93,10 +93,127 @@
                                 </td>
                             </tr>
                             <tr>
-                                <td>3</td>
-                                <td class="d-none d-md-block">John</td>
-                                <td>Doe</td>
-                                <td>
+                                <td>Il signore degli anelli</td>
+                                <td class="d-none d-md-table-cell">Jacob</td>
+                                <td><span class="badge text-bg-warning">In prestito</span></td>
+                                <td class="d-flex gap-1">
+                                    <button type="button" class="btn btn-outline-secondary fs-6">
+                                        <i class="fa-solid fa-trash"></i>
+                                    </button>
+                                    <button type="button" class="btn btn-outline-secondary">
+                                        <i class="fa-solid fa-pencil"></i>
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Harry Potter e la pietra filosofale</td>
+                                <td class="d-none d-md-table-cell">John</td>
+                                <td><span class="badge text-bg-success">Disponibile</span></td>
+                                <td class="d-flex gap-1">
+                                    <button type="button" class="btn btn-outline-secondary fs-6">
+                                        <i class="fa-solid fa-trash"></i>
+                                    </button>
+                                    <button type="button" class="btn btn-outline-secondary">
+                                        <i class="fa-solid fa-pencil"></i>
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Il codice da Vinci</td>
+                                <td class="d-none d-md-table-cell">John</td>
+                                <td><span class="badge text-bg-danger">Non disponibile</span></td>
+                                <td class="d-flex gap-1">
+                                    <button type="button" class="btn btn-outline-secondary fs-6">
+                                        <i class="fa-solid fa-trash"></i>
+                                    </button>
+                                    <button type="button" class="btn btn-outline-secondary">
+                                        <i class="fa-solid fa-pencil"></i>
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Shining</td>
+                                <td class="d-none d-md-table-cell">John</td>
+                                <td><span class="badge text-bg-success">Disponibile</span></td>
+                                <td class="d-flex gap-1">
+                                    <button type="button" class="btn btn-outline-secondary fs-6">
+                                        <i class="fa-solid fa-trash"></i>
+                                    </button>
+                                    <button type="button" class="btn btn-outline-secondary">
+                                        <i class="fa-solid fa-pencil"></i>
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>La divina commedia</td>
+                                <td class="d-none d-md-table-cell">John</td>
+                                <td><span class="badge text-bg-warning">In prestito</span></td>
+                                <td class="d-flex gap-1">
+                                    <button type="button" class="btn btn-outline-secondary fs-6">
+                                        <i class="fa-solid fa-trash"></i>
+                                    </button>
+                                    <button type="button" class="btn btn-outline-secondary">
+                                        <i class="fa-solid fa-pencil"></i>
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Il trono di spade</td>
+                                <td class="d-none d-md-table-cell">John</td>
+                                <td><span class="badge text-bg-danger">Non disponibile</span></td>
+                                <td class="d-flex gap-1">
+                                    <button type="button" class="btn btn-outline-secondary fs-6">
+                                        <i class="fa-solid fa-trash"></i>
+                                    </button>
+                                    <button type="button" class="btn btn-outline-secondary">
+                                        <i class="fa-solid fa-pencil"></i>
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Il mondo di sofia</td>
+                                <td class="d-none d-md-table-cell">John</td>
+                                <td><span class="badge text-bg-success">Disponibile</span></td>
+                                <td class="d-flex gap-1">
+                                    <button type="button" class="btn btn-outline-secondary fs-6">
+                                        <i class="fa-solid fa-trash"></i>
+                                    </button>
+                                    <button type="button" class="btn btn-outline-secondary">
+                                        <i class="fa-solid fa-pencil"></i>
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Le cronache di Narnia: il leone, la strega e l'armadio</td>
+                                <td class="d-none d-md-table-cell">John</td>
+                                <td><span class="badge text-bg-warning">In prestito</span></td>
+                                <td class="d-flex gap-1">
+                                    <button type="button" class="btn btn-outline-secondary fs-6">
+                                        <i class="fa-solid fa-trash"></i>
+                                    </button>
+                                    <button type="button" class="btn btn-outline-secondary">
+                                        <i class="fa-solid fa-pencil"></i>
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Il piccolo principe</td>
+                                <td class="d-none d-md-table-cell">John</td>
+                                <td><span class="badge text-bg-success">Disponibile</span></td>
+                                <td class="d-flex gap-1">
+                                    <button type="button" class="btn btn-outline-secondary fs-6">
+                                        <i class="fa-solid fa-trash"></i>
+                                    </button>
+                                    <button type="button" class="btn btn-outline-secondary">
+                                        <i class="fa-solid fa-pencil"></i>
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>La storia infinita</td>
+                                <td class="d-none d-md-table-cell">John</td>
+                                <td><span class="badge text-bg-success">Disponibile</span></td>
+                                <td class="d-flex gap-1">
                                     <button type="button" class="btn btn-outline-secondary fs-6">
                                         <i class="fa-solid fa-trash"></i>
                                     </button>
@@ -107,10 +224,9 @@
                             </tr>
                         </tbody>
                     </table>
-                    
-                
-            <div class="row">
-                <div class="card col-sm-12 mb-4" style="width: 100%;">
+                </div>    
+            <div class="col-sm-12 col-lg-4 mb-4">
+                <div class="card" style="width: 100%;">
                     <div class="card-header">
                         Todo
                     </div>
@@ -140,6 +256,7 @@
                             </div>
                         </li>
                     </ul>
+            </div>    
                 </div>
                 <div class="col-sm-12">
                     <div class="card" style="width: 100%;">
@@ -189,7 +306,7 @@
                             </div>
                         </div>
                     </div>
-                
+                </div>
             </div>
         </div>
     </main>
