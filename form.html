@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.8/css/bootstrap.min.css" integrity="sha512-2bBQCjcnw658Lho4nlXJcc6WkV/UxpE/sAokbXPxQNGqmNdQrWqtw26Ns9kFF/yG792pKR1Sx8/Y1Lf1XN4GKA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <!--navbar-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-4">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="./img/duck.png" alt="duck" width="50" height="50">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse fs-6" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item d-none d-lg-inline-block">
+                            <a class="nav-link active" aria-current="page" href="#">Catalogo libri</a>
+                        </li>
+                        <li class="nav-item d-none d-lg-inline-block">
+                            <a class="nav-link" href="#">Anagrafica utenti</a>
+                        </li>
+                        <li class="nav-item d-none d-lg-inline-block">
+                            <a class="nav-link" href="#">Storico prestiti</a>
+                        </li>
+                        <li class="nav-item d-none d-lg-inline-block">
+                            <a class="nav-link" aria-disabled="true">Help</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <h1 class="mb-4">Nuovo Libro</h1>
+        
+        <!--Nome e cognome autore-->
+        <form>
+            <div class="row">
+                <div class="col-6">
+                    <label for="inputname" class="form-lable mb-2 fw-medium">Nome autore</label>
+                    <input class="form-control" type="text" placeholder="Inserisci il nome dell'autore" aria-label="Name">
+                </div>
+                <div class="col-6 mb-4">
+                    <label for="inputname" class="form-lable mb-2 fw-medium">Cognome autore</label>
+                    <input class="form-control" type="text" placeholder="Inserisci il cognome dell'autore" aria-label="Second-name">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 mb-4">
+                    <label for="inputname" class="form-lable mb-2 fw-medium">Cognome autore</label>
+                    <input class="form-control" type="text" placeholder="Inserisci il Titolo del libro" aria-label="Title">
+                    <div id="passwordHelpBlock" class="form-text">
+                        Titolo versione italiana
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-4 col-lg-4 mb-4">
+                    <label for="inputname" class="form-lable mb-2 fw-medium">Genere</label>
+                    <select class="form-select" aria-label="Default select example">
+                        <option selected>Scegli il genere</option>
+                        <option value="1">Romanzo</option>
+                        <option value="2">Fantasy</option>
+                        <option value="3">Horror</option>
+                    </select>
+                </div>
+                <div class="col-12 col-md-4 col-lg-4 mb-4">
+                    <label for="inputname" class="form-lable mb-2 fw-medium">Anno di Pubblicazione</label>
+                    <input class="form-control" type="text" placeholder="Inserisci l'anno" aria-label="year">
+                </div>
+                <div class="col-12 col-md-4 col-lg-4 mb-5">
+                    <label for="inputname" class="form-lable mb-2 fw-medium">ISBN#</label>
+                    <input class="form-control" type="text" placeholder="Inserisci il codice ISBN#" aria-label="isbn">
+                </div>
+            </div>    
+                <hr>
+            <div class="row">
+                <div class="col-12">
+                    <label for="textarea" class="form-lable fw-medium">Note</label>
+                    <textarea class="form-control" aria-label="With textarea" rows="5" placeholder="Inserisci eventuali note sul libro"></textarea>
+                    <div class="form-check mt-3">
+                        <input class="form-check-input" type="checkbox" value="" id="checkDefault">
+                        <label class="form-check-label" for="checkDefault">
+                            Disponibile anche in digitale
+                        </label>     
+                    </div>
+                <div>   
+                    <button class="btn btn-primary mt-3 mb-5" type="submit">Aggiungi Libro</button>
+                </div>    
+                </div>
+            </div>
+            
+
+        </form>
+        </div>
+    </main>
+    <footer></footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.8/js/bootstrap.min.js" integrity="sha512-nKXmKvJyiGQy343jatQlzDprflyB5c+tKCzGP3Uq67v+lmzfnZUi/ZT+fc6ITZfSC5HhaBKUIvr/nTLCV+7F+Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+</html>
